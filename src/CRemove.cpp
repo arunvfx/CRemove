@@ -54,7 +54,7 @@ public:
 isWildcardMatch -> check wildcard pattern with the channelname and if it matchs, then returns true else false.
 */
 
-static inline bool isWildcardMatch(std::string channelName, std::string pattern) {
+static inline bool isWildcardMatch(std::string& channelName, std::string& pattern) {
 	int channelNameIndex = 0, patternIndex = 0, lastWildcardIndex = -1, channelNameBacktrackIndex = -1, nextWildcardIndex = -1;
 
 	while (channelNameIndex < channelName.size()) {
